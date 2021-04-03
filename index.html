@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- navbar-start -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <span>
+                <p>Select Array size and Speed </p>
+                <input id="a_size" type="range" min=30 max=250 step=1 value=80>
+               
+                <input id="a_speed" type="range" min=1 max=5 step=1 value=4>
+                <button id="a_generate" class="btn">Generate New Array!</button>
+            </span>
+            <h1>Sorting Algorithm</h1>
+            <!-- buttons for respective sorting algorithms -->
+            <button type="button" id="bubble" class="btn btn-outline-dark">Bubble Sort</button>
+            <button type="button" id="select" class="btn btn-outline-dark">Selection Sort</button>
+            <button type="button" id="insert" class="btn btn-outline-dark">Insert Sort</button>
+            <!-- <button type="button" class="btn btn-outline-dark">Merge Sort</button>
+            <button type="button" class="btn btn-outline-dark">Quick Sort</button> -->
+        </div>
+    </nav>
+    <!-- this div will hold the 100 arrays created using javascript -->
+    <section>
+       
+        <div id="bars">
+            </div>
+    </section>
+
+
+    <script src="index.js"></script>
+    <script src="speed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
